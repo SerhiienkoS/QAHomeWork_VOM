@@ -7,10 +7,14 @@ import org.testng.annotations.Test;
 public class AddItemToCartTests extends TestBase {
     @BeforeMethod
     public void precondition() {
+        if(app.getUser().isLogOutPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginForm(new User().setEmail("Tester1235321@gmail.com").setPassword("123456"));
         app.getUser().clickOnLoginButton();
     }
+
     @Test
     public void addProductToCartTest(){
         app.getAddToCart().clickOnBooksButtonInHeader();

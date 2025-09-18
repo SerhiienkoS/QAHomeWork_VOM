@@ -9,6 +9,10 @@ public class HomePageHelper extends BaseHelper{
     }
 
     public boolean isHomeComponentPresent(){
-        return isElementPresent(By.xpath("//div[@class='header-logo']"));
+        return isElementPresent(By.cssSelector("img[alt='Tricentis Demo Web Shop']"));
+    }
+
+    public void clickOnHomeLink() {
+        click(By.xpath("img[alt='Tricentis Demo Web Shop']"));
     }
 }

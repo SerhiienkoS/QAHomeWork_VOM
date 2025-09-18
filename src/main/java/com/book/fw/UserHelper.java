@@ -42,4 +42,12 @@ public class UserHelper extends BaseHelper{
     public boolean isSignOutElementPresent() {
         return isElementPresent(By.cssSelector("a.ico-logout"));
     }
+
+    public boolean isLogOutPresent() {
+        return isElementPresent(By.cssSelector("a.ico-logout"));
+    }
+
+    public void clickOnSignOutButton() {
+         click(By.cssSelector("a.ico-logout"));
+    }
 }

@@ -1,9 +1,18 @@
 package com.book.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase {
+
+    @BeforeMethod
+    public void ensurePrecondition(){
+        if(app.getUser().isLogOutPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
+    }
+
     @Test(enabled = false)
     public void newUserRegistrationPositiveTest() {
 
