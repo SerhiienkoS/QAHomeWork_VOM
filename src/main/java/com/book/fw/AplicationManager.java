@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class AplicationManager{
-    WebDriver driver;
+    public WebDriver driver;
     UserHelper user;
     HomePageHelper home;
     AddToCartHelper addToCart;

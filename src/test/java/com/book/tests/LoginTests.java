@@ -1,5 +1,6 @@
-package com.book.models;
+package com.book.tests;
 
+import com.book.models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;

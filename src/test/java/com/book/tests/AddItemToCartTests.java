@@ -7,15 +7,15 @@ import org.testng.annotations.Test;
 public class AddItemToCartTests extends TestBase {
     @BeforeMethod
     public void precondition() {
-        app.clickOnLoginLink();
-        app.fillLoginForm(new User().setEmail("Tester1235321@gmail.com").setPassword("123456"));
-        app.clickOnLoginButton();
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillLoginForm(new User().setEmail("Tester1235321@gmail.com").setPassword("123456"));
+        app.getUser().clickOnLoginButton();
     }
     @Test
     public void addProductToCartTest(){
-        app.clickOnBooksButtonInHeader();
-        app.clickAddProductButton(); // это добовление 1 продукта из списка (кнопка Add пренадлежит 1 продукту в списке)
-        app.clickOnCartIcon();
+        app.getAddToCart().clickOnBooksButtonInHeader();
+        app.getAddToCart().clickAddProductButton(); // это добовление 1 продукта из списка (кнопка Add пренадлежит 1 продукту в списке)
+        app.getAddToCart().clickOnCartIcon();
 
     }
 
