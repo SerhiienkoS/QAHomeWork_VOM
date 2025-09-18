@@ -8,7 +8,7 @@ public class HomePageTests extends TestBase {
     public void isHomeComponentPresentTest(){
         //driver.findElement(By.xpath("//div[@class='header-logo']"));
         //System.out.println("Home Component " + isHomeComponentPresent());
-        Assert.assertTrue(isHomeComponentPresent());
+        Assert.assertTrue(app.getHome().isHomeComponentPresent());
     }
 }
 
