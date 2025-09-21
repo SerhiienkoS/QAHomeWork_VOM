@@ -1,0 +1,17 @@
+<suite name="Negative" verbose="1">
+    <test name="Negative">
+        <classes>
+            <class name="com.book.tests.CreateAccountTests">
+                <methods>
+                    <include name=".*Negative.*"/>
+                </methods>
+            </class>
+
+            <class name="com.book.tests.LoginTests">
+                <methods>
+                    <include name=".*Negative.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
