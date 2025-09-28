@@ -2,11 +2,14 @@
 //
 //import com.book.models.User;
 //import org.openqa.selenium.By;
-//import org.testng.xml.Assert;
-//import org.testng.xml.annotations.BeforeMethod;
-//import org.testng.xml.annotations.Test;
+//import org.testng.AssertJUnit;
+//import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.Test;
+//
 //
 //public class DeleteItemFromCartTest extends TestBase {
+//    private AssertJUnit Assert;
+//
 //    @BeforeMethod
 //    public void precondition(String email, String password) {
 ////        if(app.getUser().isLogOutPresent()){

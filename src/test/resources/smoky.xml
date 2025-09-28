@@ -4,12 +4,12 @@
     <test name="Smoky">
         <classes>
             <class name="com.book.tests.HomePageTests"/>
-            <class name="com.book.tests.LoginTests">
+            <class name="com.demo.tests.LoginTests">
                 <methods>
                     <exclude name=".*Negative.*"></exclude>
                 </methods>
             </class>
-            <class name="com.book.tests.AddItemToCartTests">
+            <class name="com.demo.tests.AddItemToCartTests">
 <!--                <methods>-->
 <!--                    <exclude name=".*From.*"></exclude>-->
 <!--                </methods>-->

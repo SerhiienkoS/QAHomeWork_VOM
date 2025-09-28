@@ -1,6 +1,7 @@
-package com.book.fw;
+package com.demoWeb.fw;
 
-import com.book.models.User;
+
+import com.demoWeb.models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
